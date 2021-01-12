@@ -4,10 +4,17 @@ body{
     transition: 4s linear;
 }
 .ph{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: 'box box box box'
+                          'box1 box1 box1 box1'
+                          'box25 box25 box25 box25'
+                          'box26 box26 box26 box26'
+                          'box2 box2 box2 box2'
+                          'box3 box3 box3 box3'
+                          'box5 box5 box5 box5';
 }
 #box5{
+    grid-area: box5;
     width: 100px;
     height: 100px;
     border-style: inset;
@@ -48,12 +55,12 @@ h2{
  position: fixed;
  width: 100%;
  height: 10px;
-    
+    grid-area: box;
     
 }
 #box1{
     padding: 31px;
-    
+    grid-area: box1;
   
 }
 #box1 img{
@@ -78,6 +85,8 @@ a:hover{
     background-color: cornsilk;
     margin-bottom: 50px;
     opacity: 0.8;
+    grid-area: box2;
+    width: 1500px;
     
 }
 #box2 p{
@@ -92,24 +101,37 @@ a:hover{
     bottom:1%;
     width: 100%;
     height: 7%;
+    grid-area: box3;
 }
 #box3 h1{
     text-align: center;
     border-style: inset;
 }
 #box25{
-    margin-top: -421px;
+    margin-top: 00px;
     width: 270px;
     height: 113px;
     border: inset #e4fcf6;
     background-color: coral;
+    grid-area: box25;
     
 }
 #box26{
-    margin-top: -317px;
+    /* margin-top: -317px; */
     width: 390px;
     height: 113px;
     border: inset #e4fcf6;
     background-color: #e35926;
+    grid-area: box26;
 }
+#flex{
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    
 }
+/* @media (max-width:320px) */
+/* { */
+    /* body{ */
+        /* background-color: #fa0808; */
+    /* } */
+/* } */
